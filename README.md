@@ -4,10 +4,10 @@
 
 +++++++++++++++++++++++++++++++ 程序运行效果图 +++++++++++++++++++++++++
 
+#######
+![程序的演示图片](https://github.com/ChampionDragon/AfterSaleService/blob/master/UI/1.jpg)
 
-![程序的演示图片](https://github.com/ChampionDragon/LCDsystem/blob/master/UI/%E5%9B%BE%E7%89%871.png)
-
-
+******
 ![程序的演示图片](https://github.com/ChampionDragon/LCDsystem/blob/master/UI/%E5%9B%BE%E7%89%872.png)
 
 
