@@ -15,18 +15,18 @@
 
 
 #
-![程序的演示图片4](https://github.com/ChampionDragon/AfterSaleService/blob/master/UI/4.jpg)
+![程序的演示图片4](https://github.com/ChampionDragon/AfterSaleService/blob/master/UI/4.png)
 
 
 #
-![程序的演示图片5](https://github.com/ChampionDragon/AfterSaleService/blob/master/UI/5.jpg)
+![程序的演示图片5](https://github.com/ChampionDragon/AfterSaleService/blob/master/UI/5.png)
 
 #
 ![程序的演示图片6](https://github.com/ChampionDragon/AfterSaleService/blob/master/UI/6.jpg)
 #
 ![程序的演示图片7](https://github.com/ChampionDragon/AfterSaleService/blob/master/UI/7.jpg)
 #
-![程序的演示图片8](https://github.com/ChampionDragon/AfterSaleService/blob/master/UI/8.jpg)
+![程序的演示图片8](https://github.com/ChampionDragon/AfterSaleService/blob/master/UI/8.jpeg)
 #
 ![程序的演示图片9](https://github.com/ChampionDragon/AfterSaleService/blob/master/UI/9.jpeg)
 #
