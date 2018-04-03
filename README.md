@@ -57,12 +57,6 @@
 
 #
 ![程序的演示图片i](https://github.com/ChampionDragon/AfterSaleService/blob/master/UI/i.jpeg)
-#
-![程序的演示图片j](https://github.com/ChampionDragon/AfterSaleService/blob/master/UI/j.jpeg)
-
-
-
-
 
 
 
