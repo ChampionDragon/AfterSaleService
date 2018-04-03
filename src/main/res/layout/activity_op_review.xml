@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/usermsgactivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/tt"
+        android:layout_width="match_parent">
+
+        <TextView
+            style="@style/tt_tv"
+            android:layout_centerInParent="true"
+            android:text="用户评价" />
+
+        <ImageView
+            android:id="@+id/opreview"
+            style="@style/tt_iv"
+            android:background="@drawable/title_im" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        android:text="@string/opreview"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <RatingBar
+            android:id="@+id/opreview_ratingbar"
+            style="@style/RatingBaropreview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:numStars="5"
+            android:progressDrawable="@drawable/ratingbar_opreview"
+            android:rating="5"
+            android:stepSize="0.5" />
+
+
+        <LinearLayout
+            android:id="@+id/useropinion_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="11dp"
+            android:background="@drawable/input_bg"
+            android:orientation="vertical"
+            android:padding="11dp">
+
+            <EditText
+                android:id="@+id/useropinion_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="请输入意见及建议" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/opreview_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/login_btn_bg"
+        android:text="提交"
+        android:textColor="@drawable/login_btn_text"
+        android:textSize="@dimen/opnew_tv" />
+</LinearLayout>

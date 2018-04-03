@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/tt"
+        android:layout_width="match_parent">
+
+        <TextView
+            style="@style/tt_tv"
+            android:layout_centerInParent="true"
+            android:text="详情" />
+
+        <ImageView
+            android:id="@+id/opdetail"
+            style="@style/tt_iv"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/title_im" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/opdetail_iv"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/opdetail_left"
+            android:background="@mipmap/userorange" />
+
+        <TextView
+            android:id="@+id/applicant_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/opdetail_iv"
+            android:layout_marginLeft="@dimen/opdetail_marginleft"
+            android:layout_toRightOf="@id/opdetail_iv"
+            android:text="申请人:"
+            android:textSize="@dimen/opdetail_tv" />
+
+        <TextView
+            android:id="@+id/opdetail_applicant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/applicant_tv"
+            android:layout_marginLeft="@dimen/opdetail_marginleft"
+            android:layout_toRightOf="@id/applicant_tv"
+            android:text="张三"
+            android:textColor="@color/black"
+            android:textSize="@dimen/opdetail_tv" />
+
+        <TextView
+            android:id="@+id/opdetail_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/applicant_tv"
+            android:layout_marginLeft="22dp"
+            android:layout_toRightOf="@id/opdetail_applicant"
+            android:text="2018/03/26/ 15:00:00"
+            android:textSize="@dimen/opdetail_tv" />
+
+        <TextView
+            android:id="@+id/taskattribute_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/applicant_tv"
+            android:layout_marginLeft="@dimen/opdetail_marginleft"
+            android:layout_toRightOf="@id/opdetail_iv"
+            android:text="任务属性:"
+            android:textSize="@dimen/opdetail_tv" />
+
+        <TextView
+            android:id="@+id/opdetail_taskattribute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/taskattribute_tv"
+            android:layout_marginLeft="@dimen/opdetail_marginleft"
+            android:layout_toRightOf="@id/taskattribute_tv"
+            android:text="出差办事"
+            android:textColor="@color/black"
+            android:textSize="@dimen/opdetail_tv" />
+
+
+    </RelativeLayout>
+
+    <ImageView style="@style/iv" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="16"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout style="@style/opdetail_llf">
+
+                <LinearLayout style="@style/opdetail_ll">
+
+                    <TextView
+                        style="@style/opdetail_tv"
+                        android:text="出差日期" />
+
+                    <TextView
+                        android:id="@+id/opdetail_businesstime"
+                        style="@style/opdetail_tvb"
+                        android:text="xxxx/xx/xx" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/opdetail_ll">
+
+                    <TextView
+                        style="@style/opdetail_tv"
+                        android:text="出差地点" />
+
+                    <TextView
+                        android:id="@+id/opdetail_businessplace"
+                        style="@style/opdetail_tvb"
+                        android:text="xxxxxxxxxxxx" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/opdetail_llf">
+
+                <LinearLayout style="@style/opdetail_ll">
+
+                    <TextView
+                        style="@style/opdetail_tv"
+                        android:text="出差人员" />
+
+                    <TextView
+                        android:id="@+id/opdetail_businessperson"
+                        style="@style/opdetail_tvb"
+                        android:text="xxxx,xx,xxx" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/opdetail_ll">
+
+                    <TextView
+                        style="@style/opdetail_tv"
+                        android:text="同行人员" />
+
+                    <TextView
+                        android:id="@+id/opdetail_personpeer"
+                        style="@style/opdetail_tvb"
+                        android:text="xxxx,xx,xxx" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/opdetail_llf">
+
+                <LinearLayout style="@style/opdetail_ll">
+
+                    <TextView
+                        style="@style/opdetail_tv"
+                        android:text="客户名称" />
+
+                    <TextView
+                        android:id="@+id/opdetail_customername"
+                        style="@style/opdetail_tvb"
+                        android:text="xxxx,xx,xxx" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/opdetail_ll">
+
+                    <TextView
+                        style="@style/opdetail_tv"
+                        android:text="客户电话" />
+
+                    <TextView
+                        android:id="@+id/opdetail_customerphone"
+                        style="@style/opdetail_tvb"
+                        android:text="xxxx,xx,xxx" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/opdetail_llf">
+
+                <LinearLayout style="@style/opdetail_ll">
+
+                    <TextView
+                        style="@style/opdetail_tv"
+                        android:text="所属办事处" />
+
+                    <TextView
+                        android:id="@+id/opdetail_office"
+                        style="@style/opdetail_tvb"
+                        android:text="xxxxxxxxx" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/opdetail_ll">
+
+                    <TextView
+                        style="@style/opdetail_tv"
+                        android:text="办事处电话" />
+
+                    <TextView
+                        android:id="@+id/opdetail_officephone"
+                        style="@style/opdetail_tvb"
+                        android:text="xxxxxxxxx" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/opdetail_llf">
+
+                <LinearLayout style="@style/opdetail_ll">
+
+                    <TextView
+                        style="@style/opdetail_tv"
+                        android:text="预支费用" />
+
+                    <TextView
+                        android:id="@+id/opdetail_cost"
+                        style="@style/opdetail_tvb"
+                        android:text="xxxxxxxxx" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/opdetail_ll">
+
+                    <TextView
+                        style="@style/opdetail_tv"
+                        android:text="实际费用 " />
+
+                    <TextView
+                        android:id="@+id/opdetail_costactual"
+                        style="@style/opdetail_tvb"
+                        android:text="xxxxxxxxx" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                style="@style/opdetail_tv1"
+                android:text="乘车路线 " />
+
+            <TextView
+                android:id="@+id/opdetail_busroute"
+                style="@style/opdetail_tvb1"
+                android:text="XXXXXXXXXXXXXXXXX" />
+
+            <TextView
+                style="@style/opdetail_tv1"
+                android:text="产品故障描述 " />
+
+            <TextView
+                android:id="@+id/opdetail_maldescription"
+                style="@style/opdetail_tvb1"
+                android:text="XXXXXXXXXXXXXXXXX" />
+
+            <TextView
+                style="@style/opdetail_tv1"
+                android:text="故障原因分析 " />
+
+            <TextView
+                android:id="@+id/opdetail_malreason"
+                style="@style/opdetail_tvb1"
+                android:text="XXXXXXXXXXXXXXXXX" />
+
+            <TextView
+                style="@style/opdetail_tv1"
+                android:text="故障处理流程" />
+
+            <TextView
+                android:id="@+id/opdetail_maldeal"
+                style="@style/opdetail_tvb1"
+                android:text="XXXXXXXXXXXXXXXXX" />
+
+            <TextView
+                style="@style/opdetail_tv1"
+                android:text="故障处理结果" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/opdetail_lll"
+                    android:paddingTop="@dimen/opdetail_left">
+
+                    <TextView
+                        style="@style/opdetail_tv"
+                        android:text="故障配件名称 " />
+
+                    <TextView
+                        android:id="@+id/opdetail_partsname"
+                        style="@style/opdetail_tvb"
+                        android:text="xxxxxxxxx" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/opdetail_lll">
+
+                    <TextView
+                        style="@style/opdetail_tv"
+                        android:text="规格型号 " />
+
+                    <TextView
+                        android:id="@+id/opdetail_partsmodel"
+                        style="@style/opdetail_tvb"
+                        android:text="xxxxxxxxx" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/opdetail_lll">
+
+                    <TextView
+                        style="@style/opdetail_tv"
+                        android:text="是否更换 " />
+
+                    <TextView
+                        android:id="@+id/opdetail_partsischange"
+                        style="@style/opdetail_tvb"
+                        android:text="xxxxxxxxx" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/opdetail_lll">
+
+                    <TextView
+                        style="@style/opdetail_tv"
+                        android:text="配件数量 " />
+
+                    <TextView
+                        android:id="@+id/opdetail_partsnum"
+                        style="@style/opdetail_tvb"
+                        android:text="xxxxxxxxx" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/opdetail_lll">
+
+                    <TextView
+                        style="@style/opdetail_tv"
+                        android:text="备注 " />
+
+                    <TextView
+                        android:id="@+id/opdetail_partsnote"
+                        style="@style/opdetail_tvb"
+                        android:text="xxxxxxxxx" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="11dp"
+        android:layout_weight="2"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="确认"
+            android:textColor="@drawable/opdetail_tv"
+            android:textSize="@dimen/opdetail_tv" />
+
+        <ImageView style="@style/iv_vertical" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="拒绝"
+            android:textColor="@drawable/opdetail_tv"
+            android:textSize="@dimen/opdetail_tv" />
+
+        <ImageView style="@style/iv_vertical" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="转发"
+            android:textColor="@drawable/opdetail_tv"
+            android:textSize="@dimen/opdetail_tv" />
+
+        <ImageView style="@style/iv_vertical" />
+
+        <TextView
+            android:id="@+id/opdetail_discuss"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="评论"
+            android:textColor="@drawable/opdetail_tv"
+            android:textSize="@dimen/opdetail_tv" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

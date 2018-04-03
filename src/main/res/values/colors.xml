@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <!-- 扫描框旁边区域的颜色 -->
+    <color name="my_viewfinder_mask">#60000000</color>
+    <!-- 标准颜色 -->
+    <color name="myshadow">#b3b3b3</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="purple">#800073</color>
+    <color name="gold">#ffd700</color>
+    <color name="blueSky">#2894ff</color>
+    <color name="blue">#0f71d2</color>
+    <color name="blue_deep">#191970</color>
+    <color name="red">#ff0000</color>
+    <color name="red_deep">#8B1A1A</color>
+    <color name="green">#32cd32</color>
+    <color name="green_deep">#006000</color>
+    <color name="green_shallow">#ADFF2F</color>
+    <color name="yellow">#ffff00</color>
+    <color name="orange">#ffa500</color>
+    <color name="orange_deep">#CD6600</color>
+    <color name="gray">#707070</color>
+    <color name="gray_shallow">#bfbfbf</color>
+    <color name="transparent">#00ff0000</color>
+    <!-- 项目主要背景颜色 -->
+    <color name="bg_main">#e3e3e3</color>
+
+
+
+
+    <!--  +++++++++++++++++++++++++++  PickView的颜色  ++++++++++++++++++++++++++++++   -->
+    <color name="pickerview_timebtn_nor">#057dff</color>
+    <color name="pickerview_timebtn_pre">#c2daf5</color>
+    <color name="pickerview_bg_topbar">#f5f5f5</color>
+    <color name="pickerview_topbar_title">#000000</color>
+    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <color name="pickerview_wheelview_textcolor_center">#2a2a2a</color>
+    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+    <!--覆盖颜色-->
+    <color name="bgColor_overlay">#60000000</color>
+
+
+
+
+
+
+
+
+
+</resources>

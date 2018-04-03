@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 头像属性 -->
+    <declare-styleable name="RoundImageView">
+        <attr name="border_thickness" format="dimension"/>
+        <attr name="border_inside_color" format="color"/>
+        <attr name="border_outside_color" format="color"/>
+    </declare-styleable>
+
+
+    <!--自定义微信按钮效果-->
+    <declare-styleable name="SwitchView">
+        <attr name="switch_bg_color" format="color" />
+        <attr name="switch_ball_color" format="color" />
+    </declare-styleable>
+
+    <!--pickerView-->
+    <declare-styleable name="wheelview">
+        <attr name="gravityPickView">
+            <enum name="center" value="17"/>
+            <enum name="left" value="3"/>
+            <enum name="right" value="5"/>
+        </attr>
+        <attr name="textSize" format="dimension"/>
+        <attr name="textColorOut" format="color"/>
+        <attr name="textColorCenter" format="color"/>
+        <attr name="dividerColor" format="color"/>
+    </declare-styleable>
+
+
+</resources>

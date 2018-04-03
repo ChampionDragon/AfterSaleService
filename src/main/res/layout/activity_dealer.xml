@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dealeractivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/tt"
+        android:layout_width="match_parent">
+
+        <TextView
+            style="@style/tt_tv"
+            android:layout_centerInParent="true"
+            android:text="经销商认证" />
+
+        <ImageView
+            android:id="@+id/dealer"
+            style="@style/tt_iv"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/title_im" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dealer_margin"
+            android:layout_weight="1"
+            android:text="公司名称"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dealer_tv" />
+
+        <EditText
+            android:id="@+id/dealer_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="22dp"
+            android:layout_weight="2"
+            android:background="@drawable/input_bg"
+            android:padding="@dimen/dealer_padding"
+            android:paddingLeft="15dp"
+            android:textSize="@dimen/dealer_et" />
+    </LinearLayout>
+
+    <ImageView style="@style/iv" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dealer_margin"
+            android:layout_weight="1"
+            android:text="法人代表"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dealer_tv" />
+
+        <EditText
+            android:id="@+id/dealer_legal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="22dp"
+            android:layout_weight="2"
+            android:background="@drawable/input_bg"
+            android:padding="@dimen/dealer_padding"
+            android:paddingLeft="15dp"
+            android:textSize="@dimen/dealer_et" />
+    </LinearLayout>
+
+    <ImageView style="@style/iv" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dealer_margin"
+            android:layout_weight="1"
+            android:text="税号"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dealer_tv" />
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/dealer_taxid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="22dp"
+            android:layout_weight="2"
+            android:background="@drawable/input_bg"
+            android:padding="@dimen/dealer_padding"
+            android:paddingLeft="15dp"
+            android:textSize="@dimen/dealer_et" />
+    </LinearLayout>
+
+
+    <!--  <TextView
+          android:id="@+id/license"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_marginTop="11dp"
+          android:layout_weight="1"
+          android:background="@color/white"
+          android:gravity="center_vertical"
+          android:paddingLeft="@dimen/dealer_margin"
+          android:text="上传营业执照"
+          android:textColor="@color/black"
+          android:textSize="@dimen/dealer_tv" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="44dp"
+        android:layout_marginTop="11dp"
+        android:layout_weight="5"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/dealer_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="22dp"
+            android:layout_marginLeft="88dp"
+            android:layout_marginRight="88dp"
+            android:layout_marginTop="22dp"
+            android:background="@mipmap/uploadiv"
+            android:scaleType="fitXY" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/dealer_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/btn_orange"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+</LinearLayout>

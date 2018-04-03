@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/tt"
+        android:layout_width="match_parent">
+
+        <TextView
+            style="@style/tt_tv"
+            android:layout_centerInParent="true"
+            android:text="账户与安全" />
+
+        <ImageView
+            android:id="@+id/usersafe"
+            style="@style/tt_iv"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/title_im" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/usersafe_reset"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/userset_paddingLeft"
+        android:text="修改密码"
+        android:textColor="@color/black"
+        android:textSize="@dimen/userset_tv" />
+
+    <ImageView style="@style/iv" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/userset_paddingLeft"
+            android:text="指纹登录"
+            android:textColor="@color/black"
+            android:textSize="@dimen/userset_tv" />
+
+        <com.bs.afterservice.view.SwitchButton
+            android:id="@+id/usersafe_fingerprint"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/userset_paddingLeft" />
+
+    </RelativeLayout>
+
+    <ImageView style="@style/iv" />
+
+    <TextView
+        android:id="@+id/usersafe_loginrecord"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/userset_paddingLeft"
+        android:text="历史登录记录"
+        android:textColor="@color/black"
+        android:textSize="@dimen/userset_tv" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6" />
+
+</LinearLayout>

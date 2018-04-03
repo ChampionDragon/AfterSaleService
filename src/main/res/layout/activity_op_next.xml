@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/tt"
+        android:layout_width="match_parent">
+
+        <TextView
+            style="@style/tt_tv"
+            android:layout_centerInParent="true"
+            android:text="新增" />
+
+        <ImageView
+            android:id="@+id/opnext"
+            style="@style/tt_iv"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/title_im" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout style="@style/opnext_llf">
+
+                <TextView
+                    style="@style/opnext_tv"
+                    android:text="产品故障描述" />
+
+                <LinearLayout style="@style/opnext_ll">
+
+                    <EditText style="@style/opnext_et" />
+                </LinearLayout>
+
+                <ImageView style="@style/opnext_iv" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/opnext_llf"
+                android:layout_marginTop="11dp">
+
+                <TextView
+                    style="@style/opnext_tv"
+                    android:text="故障原因分析" />
+
+                <LinearLayout style="@style/opnext_ll">
+
+                    <EditText style="@style/opnext_et" />
+                </LinearLayout>
+
+                <ImageView style="@style/opnext_iv" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/opnext_llf"
+                android:layout_marginTop="11dp">
+
+                <TextView
+                    style="@style/opnext_tv"
+                    android:text="故障处理流程" />
+
+                <LinearLayout style="@style/opnext_ll">
+
+                    <EditText style="@style/opnext_et" />
+                </LinearLayout>
+
+                <ImageView style="@style/opnext_iv" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/opnext_llf"
+                android:layout_height="333dp"
+                android:layout_marginTop="11dp">
+
+                <TextView
+                    style="@style/opnext_tv"
+                    android:text="故障处理结果" />
+
+
+                <LinearLayout style="@style/opnext_l">
+
+                    <TextView
+                        style="@style/opnext_tv1"
+                        android:text="故障配件名称" />
+
+                    <EditText style="@style/opnext_et1" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/opnext_l">
+
+                    <TextView
+                        style="@style/opnext_tv1"
+                        android:text="故障配件名称" />
+
+                    <EditText style="@style/opnext_et1" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/opnext_l">
+
+                    <TextView
+                        style="@style/opnext_tv1"
+                        android:text="故障配件名称" />
+
+                    <EditText style="@style/opnext_et1" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/opnext_l">
+
+                    <TextView
+                        style="@style/opnext_tv1"
+                        android:text="故障配件名称" />
+
+                    <EditText style="@style/opnext_et1" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/opnext_l">
+
+                    <TextView
+                        style="@style/opnext_tv1"
+                        android:text="故障配件名称" />
+
+                    <EditText style="@style/opnext_et1" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/opnext_margin1"
+        android:layout_marginTop="@dimen/opnext_margin1"
+        android:text="新增故障配件"
+        android:textSize="@dimen/opnew_tv" />
+
+
+    <Button
+        android:id="@+id/opnext_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/login_btn_bg"
+        android:text="提交"
+        android:textColor="@drawable/login_btn_text"
+        android:textSize="@dimen/opnew_tv" />
+
+
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dealeractivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/tt"
+        android:layout_width="match_parent">
+
+        <TextView
+            style="@style/tt_tv"
+            android:layout_centerInParent="true"
+            android:text="故障详情" />
+
+        <ImageView
+            android:id="@+id/maldetail"
+            style="@style/tt_iv"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/title_im" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingRight="22dp"
+        android:paddingBottom="22dp"
+        android:paddingLeft="22dp"
+        android:paddingTop="22dp">
+
+        <TextView
+            style="@style/maldetail_tv"
+            android:text="2018/03/14 11:35:00" />
+
+        <LinearLayout style="@style/maldetail_l">
+
+            <TextView
+                style="@style/maldetail_tv"
+                android:text="设备：" />
+
+            <TextView
+                style="@style/maldetail_tv"
+                android:text="道闸 BS-306" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/maldetail_l">
+
+            <TextView
+                style="@style/maldetail_tv"
+                android:text="状态：" />
+
+            <TextView
+                style="@style/maldetail_tv"
+                android:text="离线" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/maldetail_l">
+
+            <TextView
+                style="@style/maldetail_tv"
+                android:text="说明：" />
+
+            <TextView
+                style="@style/maldetail_tv"
+                android:text="未接入网络" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/maldetail_l">
+
+            <TextView
+                style="@style/maldetail_tv"
+                android:text="地址：" />
+
+            <TextView
+                style="@style/maldetail_tv"
+                android:text="江西省南昌市青山湖区民安路169号" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/maldetail_l">
+
+            <TextView
+                style="@style/maldetail_tv"
+                android:text="客户联系方式：" />
+
+            <TextView
+                android:id="@+id/maldetail_num"
+                style="@style/maldetail_tv"
+                android:text="18296127347" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/maldetail_tv"
+            android:layout_marginTop="33dp"
+            android:text="查看地图"
+            android:textColor="@color/blue" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_btn_bg"
+                    android:text="申请售后"
+                    android:textColor="@drawable/login_btn_text"
+                    android:textSize="@dimen/opnew_tv" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/maldetail_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="44dp"
+                    android:background="@drawable/login_btn_bg"
+                    android:text="联系客户"
+                    android:textColor="@drawable/login_btn_text"
+                    android:textSize="@dimen/opnew_tv" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

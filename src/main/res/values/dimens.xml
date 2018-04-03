@@ -1,0 +1,73 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!--mainActivity-->
+    <dimen name="main_title">22sp</dimen>
+    <dimen name="main_tv">17sp</dimen>
+    <dimen name="main_margin">33dp</dimen>
+
+    <!--userSet-->
+    <dimen name="userset_tv">20sp</dimen>
+    <dimen name="userset_paddingLeft">22dp</dimen>
+    <dimen name="userset_marginTop">15dp</dimen>
+
+    <!--自定义按钮的长宽-->
+    <dimen name="btn_height">25dp</dimen>
+    <dimen name="btn_width">50dp</dimen>
+    <!--userRestpwd-->
+    <dimen name="userRestpwd_tt">18sp</dimen>
+    <dimen name="userRestpwd_tv">12sp</dimen>
+    <dimen name="userRestpwd_hint">16sp</dimen>
+
+    <!--dealer-->
+    <dimen name="dealer_tv">18sp</dimen>
+    <dimen name="dealer_et">16sp</dimen>
+    <dimen name="dealer_margin">22dp</dimen>
+    <dimen name="dealer_padding">6dp</dimen>
+
+    <!--about-->
+    <dimen name="about_tv">16sp</dimen>
+
+    <!--custser-->
+    <dimen name="custer_padding">18dp</dimen>
+
+    <!--notify-->
+    <dimen name="notify_tv">18sp</dimen>
+
+    <!--opdetail-->
+    <dimen name="opdetail_left">22dp</dimen>
+    <dimen name="opdetail_marginleft">11dp</dimen>
+    <dimen name="opdetail_tv">15sp</dimen>
+
+    <!--opnew-->
+    <dimen name="opnew_tv">16sp</dimen>
+    <dimen name="opnew_left">33dp</dimen>
+
+    <!--opennext-->
+    <dimen name="opnext_tv">18sp</dimen>
+    <dimen name="opnext_ll">268dp</dimen>
+    <dimen name="opnext_margin">16dp</dimen>
+    <dimen name="opnext_margin1">11dp</dimen>
+
+
+    <!-- ++++++++++++++++++++++++++++++++++++++  pickerView  ++++++++++++++++++++++++++++++++++++++++++++-->
+    <!-- 顶部按钮栏高度 -->
+    <dimen name="pickerview_topbar_height">44dp</dimen>
+    <!-- 顶部按钮paddingLeft -->
+    <dimen name="pickerview_topbar_paddingleft">10dp</dimen>
+    <!-- 顶部按钮paddingRight -->
+    <dimen name="pickerview_topbar_paddingright">30dp</dimen>
+    <!-- 顶部按钮文字大小 -->
+    <dimen name="pickerview_topbar_btn_textsize">20sp</dimen>
+    <!--中间文字的大小-->
+    <dimen name="pickerview_topbar_title_textsize">21sp</dimen>
+    <!-- 选项文字大小 需要配合 bools.xml 的 pickerview_customTextSize 为 false 才有效果-->
+    <dimen name="pickerview_textsize">20sp</dimen>
+    <!-- 此值为false pickerview_textsize才会有效果-->
+    <bool name="pickerview_customTextSize">false</bool>
+
+
+</resources>

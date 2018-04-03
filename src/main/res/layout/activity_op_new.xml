@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/tt"
+        android:layout_width="match_parent">
+
+        <TextView
+            style="@style/tt_tv"
+            android:layout_centerInParent="true"
+            android:text="新增" />
+
+        <ImageView
+            android:id="@+id/opnew"
+            style="@style/tt_iv"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/title_im" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/opdetail_left">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="申请人"
+            android:textColor="@color/black"
+            android:textSize="@dimen/opnew_tv" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:background="@null"
+            android:hint="请输入"
+            android:textSize="@dimen/opnew_tv" />
+    </LinearLayout>
+
+
+    <LinearLayout style="@style/opnew_ll">
+
+        <TextView
+            style="@style/opnew_tv"
+            android:text="任务属性" />
+
+        <EditText style="@style/opnew_et" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/opnew_ll">
+
+        <TextView
+            style="@style/opnew_tv"
+            android:text="出差日期" />
+
+        <TextView
+            android:id="@+id/opnew_businesstime"
+            style="@style/opnew_et"
+            android:hint="请选择日期" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/opnew_ll">
+
+        <TextView
+            style="@style/opnew_tv"
+            android:text="出差地点" />
+
+        <EditText style="@style/opnew_et" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/opnew_ll">
+
+        <TextView
+            style="@style/opnew_tv"
+            android:text="出差人员" />
+
+        <EditText style="@style/opnew_et" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/opnew_ll">
+
+        <TextView
+            style="@style/opnew_tv"
+            android:text="同行人员" />
+
+        <EditText style="@style/opnew_et" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/opnew_ll">
+
+        <TextView
+            style="@style/opnew_tv"
+            android:text="客户名称" />
+
+        <EditText style="@style/opnew_et" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/opnew_ll">
+
+        <TextView
+            style="@style/opnew_tv"
+            android:text="联系电话" />
+
+        <EditText style="@style/opnew_et" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/opnew_ll">
+
+        <TextView
+            style="@style/opnew_tv"
+            android:text="所属办事处" />
+
+        <EditText style="@style/opnew_et" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/opnew_ll">
+
+        <TextView
+            style="@style/opnew_tv"
+            android:text="预支费用" />
+
+        <EditText style="@style/opnew_et" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/opnew_ll">
+
+        <TextView
+            style="@style/opnew_tv"
+            android:text="实际费用" />
+
+        <EditText style="@style/opnew_et" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/opnew_ll">
+
+        <TextView
+            style="@style/opnew_tv"
+            android:text="乘车路线" />
+
+        <EditText style="@style/opnew_et" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/opnew_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/login_btn_bg"
+        android:text="下一步"
+        android:textColor="@drawable/login_btn_text"
+        android:textSize="@dimen/opnew_tv" />
+
+
+</LinearLayout>

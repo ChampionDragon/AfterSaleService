@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">百胜售后</string>
+    <string name="title_activity_user_msg">UserMsgActivity</string>
+    <string name="opreview">请参考以下内容对售后维修人员进行评价：\n
+        1、售后维修人员技术水平是否满足维修要求\n
+        2、是否讲解了产品规范使用方法，是否耐心解答用户提出的问题\n
+        3、对故障原因及隐患的解释是否清楚、对服务态度及服务质量是否满意
+    </string>
+
+
+    <!--  pickerView   -->
+    <string name="pickerview_cancel">取消</string>
+    <string name="pickerview_submit">确定</string>
+    <string name="pickerview_year">年</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours">时</string>
+    <string name="pickerview_minutes">分</string>
+    <string name="pickerview_seconds">秒</string>
+
+
+</resources>
