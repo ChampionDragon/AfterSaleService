@@ -80,6 +80,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         findViewById(R.id.main_approvalnot).setOnClickListener(this);
         findViewById(R.id.main_approval).setOnClickListener(this);
         devRing = (RingView) findViewById(R.id.main_ringdev);
+        devRing.setOnClickListener(this);
         declareRing = (RingView) findViewById(R.id.main_ringdeclare);
         declareRing.setOnClickListener(this);
 
@@ -158,6 +159,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 break;
             case R.id.main_aftser:
                 SmallUtil.getActivity(MainActivity.this, AftSerOpActivity.class);
+                break;
+            case R.id.main_ringdev:
+//                SmallUtil.getActivity(MainActivity.this, AftSerOpActivity.class);
                 break;
             case R.id.main_approvalnot:
                 Bundle bundle = new Bundle();

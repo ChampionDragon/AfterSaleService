@@ -39,7 +39,6 @@ public class CustSerNewActivity extends BaseActivity implements View.OnClickList
         lv = (ListView) findViewById(R.id.custsernew_lv);
         findViewById(R.id.custsernew).setOnClickListener(this);
         findViewById(R.id.custsernew_tv).setOnClickListener(this);
-        findViewById(R.id.custsernew_tv).setOnClickListener(this);
         findViewById(R.id.custsernew_complete).setOnClickListener(this);
         list = new ArrayList<>();
     }
@@ -55,7 +54,6 @@ public class CustSerNewActivity extends BaseActivity implements View.OnClickList
             Logs.v(tag + " 49  添加的数据 " + Arrays.toString(arrays));
             initLv(lv, list);
         }
-
     }
 
 
@@ -81,10 +79,10 @@ public class CustSerNewActivity extends BaseActivity implements View.OnClickList
                 break;
             case R.id.custsernew_tv:
                 Bundle bundle = new Bundle();
-                bundle.putString(CustSerAddActivity.titlestr, "添加售后人员");
+                bundle.putString(CustSerAddActivity.titlestr, "添加用户");
                 bundle.putString(CustSerAddActivity.activity, "CustSerNewActivity");
                 bundle.putStringArray(CustSerAddActivity.list, list.toArray(new String[list.size()]));
-                Logs.i(tag + " 79  " + list.size());
+                Logs.i(tag + " 85  " + list.size());
                 SmallUtil.getActivity(CustSerNewActivity.this, CustSerAddActivity.class, bundle);
                 baseapp.finishActivity();
                 break;

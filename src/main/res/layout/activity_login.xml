@@ -60,8 +60,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="21dp"
-            android:background="@drawable/login_btn_bg"
             android:text="登 录"
+            android:background="@drawable/login_btn_bg"
             android:textColor="@drawable/login_btn_text"
             android:textSize="20sp" />
 

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/tt"
+        android:layout_width="match_parent">
+
+        <TextView
+            style="@style/tt_tv"
+            android:layout_centerInParent="true"
+            android:text="设备设置" />
+
+        <ImageView
+            android:id="@+id/devset"
+            style="@style/tt_iv"
+            android:background="@drawable/title_im" />
+    </RelativeLayout>
+
+    <LinearLayout style="@style/devset_l">
+
+        <TextView
+            style="@style/devset_tv"
+            android:text="设备名称" />
+
+        <EditText
+            android:id="@+id/dev_name"
+            style="@style/devset_et" />
+
+    </LinearLayout>
+
+    <ImageView style="@style/iv" />
+
+    <LinearLayout style="@style/devset_l">
+
+        <TextView
+            style="@style/devset_tv"
+            android:text="设备类型" />
+
+        <TextView
+            style="@style/devset_et"
+            android:layout_weight="2"
+            android:background="@drawable/input_bg"
+            android:drawableRight="@mipmap/triangle"
+            android:text="请选择"
+            android:textColor="@color/gray" />
+
+    </LinearLayout>
+
+    <ImageView style="@style/iv" />
+
+    <LinearLayout style="@style/devset_l">
+
+        <TextView
+            style="@style/devset_tv"
+            android:text="设备ID" />
+
+        <EditText
+            android:id="@+id/dev_id"
+            style="@style/devset_et" />
+
+    </LinearLayout>
+
+    <ImageView style="@style/iv" />
+
+
+    <LinearLayout style="@style/devset_l"
+        android:id="@+id/devset_share">
+
+        <TextView
+            style="@style/devset_tv"
+            android:text="设备共享" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        style="@style/devset_l"
+        android:layout_marginTop="11dp">
+
+        <TextView
+            style="@style/devset_tv"
+            android:layout_width="wrap_content"
+            android:text="存储状态" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="30%"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ImageView style="@style/iv" />
+
+    <LinearLayout style="@style/devset_l">
+
+        <TextView
+            style="@style/devset_tv"
+            android:text="云存储" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        style="@style/devset_l"
+        android:layout_marginTop="11dp">
+
+        <TextView
+            style="@style/devset_tv"
+            android:layout_width="wrap_content"
+            android:text="设备版本号" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Vx.x.x"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ImageView style="@style/iv" />
+
+    <LinearLayout style="@style/devset_l">
+
+        <TextView
+            style="@style/devset_tv"
+            android:text="设备日志" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="11dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="删除设备"
+        android:textColor="@color/red"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/devset_finish"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:background="@drawable/login_btn_bg"
+        android:text="提交"
+        android:textColor="@drawable/login_btn_text"
+        android:textSize="18sp" />
+
+</LinearLayout>

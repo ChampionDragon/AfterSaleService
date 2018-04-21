@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/tt"
+        android:layout_width="match_parent">
+
+        <TextView
+            style="@style/tt_tv"
+            android:layout_centerInParent="true"
+            android:text="选择接入方式" />
+
+        <ImageView
+            android:id="@+id/connmethod"
+            style="@style/tt_iv"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/title_im" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout style="@style/devset_l">
+
+            <TextView
+                style="@style/devset_tv"
+                android:layout_width="wrap_content"
+                android:text="WIFI" />
+
+            <CheckBox
+                android:id="@+id/connmethod_wifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/check_orange"
+                android:button="@null" />
+        </RelativeLayout>
+
+        <ImageView style="@style/iv" />
+
+        <RelativeLayout style="@style/devset_l">
+
+            <TextView
+                style="@style/devset_tv"
+                android:layout_width="wrap_content"
+                android:text="GPRS" />
+
+            <CheckBox
+                android:id="@+id/connmethod_gprs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/check_orange"
+                android:button="@null" />
+        </RelativeLayout>
+
+        <ImageView style="@style/iv" />
+
+        <RelativeLayout style="@style/devset_l">
+
+            <TextView
+                style="@style/devset_tv"
+                android:layout_width="wrap_content"
+                android:text="以太网" />
+
+            <CheckBox
+                android:id="@+id/connmethod_ethernet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/check_orange"
+                android:button="@null" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/connmethod_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:background="@drawable/login_btn_bg"
+        android:text="下一步"
+        android:textColor="@drawable/login_btn_text"
+        android:textSize="22sp" />
+
+
+</LinearLayout>

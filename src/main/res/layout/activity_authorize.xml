@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/tt"
+        android:layout_width="match_parent">
+
+        <TextView
+            style="@style/tt_tv"
+            android:layout_centerInParent="true"
+            android:text="授权管理" />
+
+        <ImageView
+            android:id="@+id/authorize"
+            style="@style/tt_iv"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/title_im" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/authorize_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/userorange"
+        android:drawablePadding="11dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/custer_padding"
+        android:text="添加用户"
+        android:textColor="@color/black"
+        android:textSize="19sp" />
+
+
+    <ListView
+        android:id="@+id/authorize_lv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="11dp"
+        android:layout_weight="11"
+        android:divider="@color/gray_shallow"
+        android:dividerHeight="1dp" />
+
+
+    <Button
+        android:id="@+id/authorize_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/btn_orange"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+</LinearLayout>

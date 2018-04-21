@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.bs.afterservice.R;
 import com.bs.afterservice.base.BaseActivity;
+import com.bs.afterservice.devmgr.AuthorizeActivity;
 import com.bs.afterservice.utils.Logs;
 import com.bs.afterservice.utils.SmallUtil;
 import com.bs.afterservice.utils.ToastUtil;
@@ -104,6 +105,7 @@ public class CustSerAddActivity extends BaseActivity implements View.OnClickList
         boolean isSame = false;
         String data = et.getText().toString();
 //        Logs.e(tag + " 102  arrays大小 " + arrays.length);
+
         for (String s : arrays) {
             Logs.e(s.equals(data) + " 号码是否相同");
             if (s.equals(data)) {
@@ -127,6 +129,11 @@ public class CustSerAddActivity extends BaseActivity implements View.OnClickList
             Bundle bundle = new Bundle();
             bundle.putStringArray(list, arrays);
             SmallUtil.getActivity(this, CustSerNewActivity.class, bundle);
+            baseapp.finishActivity();
+        } else if (activity.equals("AuthorizeActivity")) {
+            Bundle bundle = new Bundle();
+            bundle.putStringArray(list, arrays);
+            SmallUtil.getActivity(this, AuthorizeActivity.class, bundle);
             baseapp.finishActivity();
         } else {
             baseapp.finishActivity();

@@ -7,6 +7,7 @@ import android.view.View;
 import com.bs.afterservice.R;
 import com.bs.afterservice.base.BaseActivity;
 import com.bs.afterservice.bean.UserInfo;
+import com.bs.afterservice.devmgr.DevmgrActivity;
 import com.bs.afterservice.utils.Logs;
 import com.bs.afterservice.utils.ObjectSave;
 import com.bs.afterservice.utils.SmallUtil;
@@ -57,6 +58,7 @@ public class UserActivity extends BaseActivity implements View.OnClickListener {
         head.setOnClickListener(this);
         findViewById(R.id.back_user).setOnClickListener(this);
         findViewById(R.id.user_set).setOnClickListener(this);
+        findViewById(R.id.user_device).setOnClickListener(this);
     }
 
     @Override
@@ -64,6 +66,9 @@ public class UserActivity extends BaseActivity implements View.OnClickListener {
         switch (v.getId()) {
             case R.id.user_riv:
                 SmallUtil.getActivity(UserActivity.this, UserMsgActivity.class);
+                break;
+            case R.id.user_device:
+                SmallUtil.getActivity(UserActivity.this, DevmgrActivity.class);
                 break;
             case R.id.back_user:
                 baseapp.finishActivity();

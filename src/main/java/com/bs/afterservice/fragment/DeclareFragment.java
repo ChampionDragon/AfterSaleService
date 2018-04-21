@@ -73,7 +73,6 @@ public class DeclareFragment extends Fragment {
     }
 
     private void initLv(ListView lv, List<DeclareBean> list) {
-
         adapter = (DeclareAdapter) lv.getAdapter();
         if (adapter == null) {
             adapter = new DeclareAdapter(list, getActivity());
@@ -82,8 +81,6 @@ public class DeclareFragment extends Fragment {
             adapter.setData(list);
             adapter.notifyDataSetChanged();
         }
-
-
     }
 
 

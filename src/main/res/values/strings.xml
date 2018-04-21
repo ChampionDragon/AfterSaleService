@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">百胜售后</string>
+    <string name="scan_text">扫描设备二维码</string>
     <string name="title_activity_user_msg">UserMsgActivity</string>
     <string name="opreview">请参考以下内容对售后维修人员进行评价：\n
         1、售后维修人员技术水平是否满足维修要求\n

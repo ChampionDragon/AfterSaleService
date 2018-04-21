@@ -28,45 +28,48 @@
         android:background="@drawable/input_bg">
 
         <com.bs.afterservice.view.RoundImageView
-            android:layout_marginTop="11dp"
-            android:layout_marginLeft="11dp"
             android:id="@+id/user_riv"
             android:layout_width="66dp"
             android:layout_height="66dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="11dp"
             android:src="@mipmap/ic_launcher" />
+
         <TextView
             android:id="@+id/user_name"
-            android:layout_toRightOf="@id/user_riv"
-            android:layout_marginTop="11dp"
-            android:textSize="18sp"
             android:layout_width="wrap_content"
-            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:layout_toRightOf="@id/user_riv"
             android:text="刘子尧"
-            android:textStyle="bold"
-            android:layout_height="wrap_content" />
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
         <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignBottom="@id/user_name"
             android:layout_marginLeft="11dp"
-            android:background="@mipmap/qrcode"
             android:layout_toRightOf="@id/user_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:background="@mipmap/qrcode" />
 
         <TextView
             android:id="@+id/user_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignLeft="@id/user_name"
-            android:layout_marginBottom="16dp"
             android:layout_alignParentBottom="true"
-            android:text="江西百胜智能科技股份有限公司"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_marginBottom="16dp"
+            android:text="江西百胜智能科技股份有限公司" />
+
         <TextView
-            android:layout_marginBottom="5dp"
-            android:layout_above="@id/user_company"
-            android:text="终端用户"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/user_company"
             android:layout_alignLeft="@id/user_name"
-            android:layout_height="wrap_content" />
+            android:layout_marginBottom="5dp"
+            android:text="终端用户" />
 
     </RelativeLayout>
 
@@ -134,7 +137,7 @@
 
 
         <RelativeLayout
-            android:id="@+id/user_friend"
+            android:id="@+id/user_authorize"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"

@@ -202,6 +202,7 @@
         <item name="android:textColor">@color/black</item>
         <item name="android:textSize">@dimen/opnext_tv</item>
     </style>
+
     <style name="opnext_et1">
         <item name="android:hint">请输入</item>
         <item name="android:background">@null</item>
@@ -209,6 +210,7 @@
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_weight">3</item>
     </style>
+
     <style name="opnext_l">
         <item name="android:orientation">horizontal</item>
         <item name="android:gravity">center_vertical</item>
@@ -236,6 +238,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
     </style>
+
     <style name="opnext_iv">
         <item name="android:background">@mipmap/pin</item>
         <item name="android:layout_height">wrap_content</item>
@@ -266,6 +269,37 @@
     </style>
 
 
+    <!--  +++++++++++++++++++++++++++++++++  DevSet相关的样式   +++++++++++++++++++++++++++++++++++++++++++-->
+    <style name="devset_l">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">22dp</item>
+        <item name="android:paddingRight">22dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="devset_tv">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="devset_et">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/input_bg</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
 
 
 </resources>

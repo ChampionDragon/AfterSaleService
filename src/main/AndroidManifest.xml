@@ -9,7 +9,7 @@
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
 
-    <!--打电话权限-->
+    <!-- 打电话权限 -->
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <!-- 读取通讯录的权限 -->
@@ -103,7 +103,16 @@
         <activity android:name=".activity.OpNext" />
         <activity android:name=".activity.OpReview" />
         <activity android:name=".activity.DeclareActivity" />
-        <activity android:name=".activity.MalDetailActivity"/>
+        <activity android:name=".activity.MalDetailActivity" />
+        <activity android:name=".devmgr.DevmgrActivity" />
+        <activity android:name=".devmgr.DevmgrDealerActivity" />
+        <activity android:name=".devmgr.DevSetActivity" />
+        <activity android:name=".devmgr.DevShareActivity" />
+        <activity android:name=".devmgr.AuthorizeActivity" />
+        <activity android:name=".devmgr.AuthorizeChoiceActivity" />
+        <activity android:name=".zxing.ScanIdActivity" />
+        <activity android:name=".devmgr.ConnMethodActivity" />
+        <activity android:name=".devmgr.WifiSetActivity"></activity>
     </application>
 
 </manifest>

@@ -7,6 +7,7 @@ import android.view.View;
 import com.bs.afterservice.R;
 import com.bs.afterservice.base.BaseActivity;
 import com.bs.afterservice.bean.UserInfo;
+import com.bs.afterservice.devmgr.DevmgrDealerActivity;
 import com.bs.afterservice.utils.Logs;
 import com.bs.afterservice.utils.ObjectSave;
 import com.bs.afterservice.utils.SmallUtil;
@@ -58,6 +59,7 @@ public class UserDealerActivity extends BaseActivity implements View.OnClickList
         findViewById(R.id.back_userdealer).setOnClickListener(this);
         findViewById(R.id.userdealer_set).setOnClickListener(this);
         findViewById(R.id.userdealer_custser).setOnClickListener(this);
+        findViewById(R.id.userdealer_device).setOnClickListener(this);
     }
 
     @Override
@@ -65,6 +67,9 @@ public class UserDealerActivity extends BaseActivity implements View.OnClickList
         switch (v.getId()) {
             case R.id.userdealer_riv:
                 SmallUtil.getActivity(UserDealerActivity.this, UserMsgActivity.class);
+                break;
+            case R.id.userdealer_device:
+                SmallUtil.getActivity(UserDealerActivity.this, DevmgrDealerActivity.class);
                 break;
             case R.id.back_userdealer:
                 baseapp.finishActivity();

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/tt"
+        android:layout_width="match_parent">
+
+        <TextView
+            style="@style/tt_tv"
+            android:layout_centerInParent="true"
+            android:text="选择权限" />
+
+        <ImageView
+            android:id="@+id/authorizechoice"
+            style="@style/tt_iv"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/title_im" />
+    </RelativeLayout>
+
+
+    <LinearLayout style="@style/devset_l">
+
+        <TextView
+            style="@style/devset_tv"
+            android:text="视频相关" />
+
+    </LinearLayout>
+
+    <ImageView style="@style/iv" />
+
+    <RelativeLayout style="@style/devset_l">
+
+        <TextView
+            style="@style/devset_tv"
+            android:layout_width="wrap_content"
+            android:text="视频控制" />
+
+        <CheckBox
+            android:id="@+id/authorizechoice_ctrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/check_orange"
+            android:button="@null" />
+    </RelativeLayout>
+
+    <ImageView style="@style/iv" />
+
+    <RelativeLayout style="@style/devset_l">
+
+        <TextView
+            style="@style/devset_tv"
+            android:layout_width="wrap_content"
+            android:text="本地录像查看" />
+
+        <CheckBox
+            android:id="@+id/authorizechoice_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/check_orange"
+            android:button="@null" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        style="@style/devset_l"
+        android:layout_marginTop="11dp">
+
+        <TextView
+            style="@style/devset_tv"
+            android:text="消息相关" />
+
+    </LinearLayout>
+
+    <ImageView style="@style/iv" />
+
+    <RelativeLayout style="@style/devset_l">
+
+        <TextView
+            style="@style/devset_tv"
+            android:layout_width="wrap_content"
+            android:text="报警消息查看" />
+
+        <CheckBox
+            android:id="@+id/authorizechoice_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/check_orange"
+            android:button="@null" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/devset_l"
+        android:layout_marginTop="11dp">
+
+        <TextView
+            style="@style/devset_tv"
+            android:text="设备相关" />
+
+    </LinearLayout>
+
+    <ImageView style="@style/iv" />
+
+    <RelativeLayout style="@style/devset_l">
+
+        <TextView
+            style="@style/devset_tv"
+            android:layout_width="wrap_content"
+            android:text="设备管理" />
+
+        <CheckBox
+            android:id="@+id/authorizechoice_mgr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/check_orange"
+            android:button="@null" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" />
+
+
+    <Button
+        android:id="@+id/authorizechoice_complete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:background="@drawable/btn_orange"
+        android:text="完成"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+</LinearLayout>

@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:background="@color/white"
     android:gravity="center_vertical"
+    android:descendantFocusability="blocksDescendants"
     android:orientation="horizontal"
     android:padding="11dp">
 

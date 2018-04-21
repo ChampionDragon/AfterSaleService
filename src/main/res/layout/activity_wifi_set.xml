@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/tt"
+        android:layout_width="match_parent">
+
+        <TextView
+            style="@style/tt_tv"
+            android:layout_centerInParent="true"
+            android:text="配置WIFI" />
+
+        <ImageView
+            android:id="@+id/wifiset"
+            style="@style/tt_iv"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/title_im" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dealer_margin"
+            android:layout_weight="1"
+            android:text="SSID"
+            android:textColor="@color/black"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/wifiset_ssid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="22dp"
+            android:layout_weight="3"
+            android:padding="@dimen/dealer_padding"
+            android:paddingLeft="15dp"
+            android:text="XXXX"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <ImageView style="@style/iv" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dealer_margin"
+            android:layout_weight="1"
+            android:text="密码"
+            android:textColor="@color/black"
+            android:textSize="19sp" />
+
+        <EditText
+            android:id="@+id/wifiset_pwd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="22dp"
+            android:layout_weight="3"
+            android:background="@drawable/input_bg"
+            android:padding="@dimen/dealer_padding"
+            android:paddingLeft="15dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/wifiset_set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:background="@drawable/login_btn_bg"
+        android:text="配置WIFI"
+        android:textColor="@drawable/login_btn_text"
+        android:textSize="22sp" />
+
+</LinearLayout>

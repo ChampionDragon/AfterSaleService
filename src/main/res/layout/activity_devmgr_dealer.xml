@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/tt"
+        android:layout_width="match_parent">
+
+        <TextView
+            style="@style/tt_tv"
+            android:layout_centerInParent="true"
+            android:text="设备管理" />
+
+        <ImageView
+            android:id="@+id/devmgrdealer"
+            style="@style/tt_iv"
+            android:background="@drawable/title_im" />
+
+        <ImageView
+            android:id="@+id/devmgrdealer_add"
+            style="@style/tt_iv_right"
+            android:background="@mipmap/addtt" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/devmgrdealer_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/gray_shallow"
+        android:dividerHeight="1dp" />
+</LinearLayout>

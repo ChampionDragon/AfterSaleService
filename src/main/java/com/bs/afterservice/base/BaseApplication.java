@@ -3,11 +3,11 @@ package com.bs.afterservice.base;
 import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
+import android.net.wifi.WifiManager;
 
 import com.bs.afterservice.constant.Constant;
 import com.bs.afterservice.constant.SpKey;
 import com.bs.afterservice.db.DbManager;
-import com.bs.afterservice.utils.Logs;
 import com.bs.afterservice.utils.SpUtil;
 import com.bs.afterservice.utils.ToastUtil;
 
@@ -25,6 +25,8 @@ public class BaseApplication extends Application {
     private long firsttime;
     public SpUtil sp;
     public DbManager managerDb;
+    public static WifiManager.MulticastLock lock;
+    public static WifiManager wfm;
 
     public static BaseApplication getInstance() {
         if (mInstance == null) {
@@ -46,9 +48,17 @@ public class BaseApplication extends Application {
         mInstance = this;
         context = getApplicationContext();
         sp = SpUtil.getInstance(SpKey.SP_name, MODE_PRIVATE);
+        initUDP();
         managerDb = DbManager.getmInstance(this, Constant.dbDiveceBsmk, Constant.dbVersion);
     }
 
+    private void initUDP() {
+        // 有的手机不能直接接收UDP包，可能是手机厂商在定制Rom的时候把这个功能给关掉了。实例化一个WifiManager.MulticastLock
+        // 对象lock, 在调用广播发送、接收报文之前先调用lock.acquire()方法；
+        // 用完之后及时调用lock.release()释放资源，否决多次调用lock.acquire()方法，程序可能会崩.
+        wfm = (WifiManager) getSystemService(Context.WIFI_SERVICE);
+        lock = wfm.createMulticastLock("wifi lcb");
+    }
 
     /**
      * 退出整个程序
@@ -164,7 +174,7 @@ public class BaseApplication extends Application {
             activityStackTem.remove(activity);
             activity.finish();
             activity = null;
-//            Logs.v("168当前activity数量：" + activityStackTem.size());
+//            Logs.e("168当前activity数量：" + activityStackTem.size());
         }
     }
 

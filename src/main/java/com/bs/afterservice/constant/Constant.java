@@ -38,6 +38,13 @@ public class Constant {
     public final static String dbDiveceBsmk = "BSService";
     public final static int dbVersion = 1;
 
+    /*后台的数据接口*/
+    public final static String checkId = "http://www.bsznyun.com/wifi/check_deviceid.php";//检查序列号是否存在
+
+
+    /*Intent的key*/
+    public final static String deviceId = "deviceId";
+
 
     /*关于“服务反馈”的信息*/
     public final static String OP_applicant = "applicant";//申请人
@@ -62,6 +69,25 @@ public class Constant {
     public final static String OP_partsischange = "partsischange";//是否更换
     public final static String OP_partsnum = "partsnum";//配件数量
     public final static String OP_partsnote = "partsnote";//备注
+
+
+
+    /*IP和Port*/
+    public final static String ipIP = "224.1.1.1";
+    public final static int ipPort = 30099;
+    public final static String serverIP = "120.203.0.218";
+    public final static int serverPort = 30066;
+
+
+
+
+
+
+
+
+
+
+
 
 
 }

@@ -72,7 +72,8 @@ public class DbHelper extends SQLiteOpenHelper {
 /*如果想添加表又不想删除掉之前的表，就这个方法里添加建表语句。
 且只能添加一次,添加后立刻在这删掉填表语句不然会报错
 Caused by: android.database.sqlite.SQLiteException: table device already exists*/
-        Logs.v("dh66  测试是不是每次调用数据库都调用了这个方法");
+
+//        Logs.v("dh66  测试是不是每次调用数据库都调用了这个方法");
     }
 
     /**

@@ -21,6 +21,11 @@ import com.bs.afterservice.utils.SmallUtil;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Description:售后人员管理
+ * AUTHOR: Champion Dragon
+ * created at 2018/4/8
+ **/
 public class CustSerActivity extends BaseActivity implements View.OnClickListener {
     private ListView lv;
     private TextView sum;
