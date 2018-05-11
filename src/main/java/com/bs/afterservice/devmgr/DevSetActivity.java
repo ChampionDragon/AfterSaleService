@@ -25,6 +25,7 @@ public class DevSetActivity extends BaseActivity implements View.OnClickListener
     private void intView() {
         findViewById(R.id.devset).setOnClickListener(this);
         findViewById(R.id.devset_share).setOnClickListener(this);
+        findViewById(R.id.devset_log).setOnClickListener(this);
     }
 
     @Override
@@ -32,6 +33,9 @@ public class DevSetActivity extends BaseActivity implements View.OnClickListener
         switch (v.getId()) {
             case R.id.devset_share:
                 SmallUtil.getActivity(DevSetActivity.this,DevShareActivity.class);
+                break;
+            case R.id.devset_log:
+                SmallUtil.getActivity(DevSetActivity.this,DevLogActivity.class);
                 break;
             case R.id.devset:
                 baseapp.finishActivity();

@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.bs.afterservice.R;
 import com.bs.afterservice.bean.DevmgrBean;
+import com.bs.afterservice.devmgr.DevLogActivity;
 import com.bs.afterservice.devmgr.DevSetActivity;
 import com.bs.afterservice.utils.SmallUtil;
 import com.bs.afterservice.utils.ViewHolderUtil;
@@ -74,8 +75,12 @@ public class DevmgrAdapter extends BaseAdapter {
                 SmallUtil.getActivity((Activity) context, DevSetActivity.class);
             }
         });
-
-
+        ViewHolderUtil.get(convertView, R.id.dev_log).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SmallUtil.getActivity((Activity) context, DevLogActivity.class);
+            }
+        });
         return convertView;
     }
 

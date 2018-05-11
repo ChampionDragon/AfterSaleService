@@ -32,6 +32,7 @@ public class Constant {
     public final static String formatlogin = "yyyy/MM/dd HH:mm";//登录记录的格式
     public final static String formatnotify = "yyyy/MM/dd HH:mm:ss";//通知记录的格式
     public final static String formatbusinesstime = "yyyy/MM/dd";//通知记录的格式
+    public final static int Day=24*60*60*1000;
 
 
     /* 数据库 */

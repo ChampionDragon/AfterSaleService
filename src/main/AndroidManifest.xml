@@ -112,7 +112,9 @@
         <activity android:name=".devmgr.AuthorizeChoiceActivity" />
         <activity android:name=".zxing.ScanIdActivity" />
         <activity android:name=".devmgr.ConnMethodActivity" />
-        <activity android:name=".devmgr.WifiSetActivity"></activity>
+        <activity android:name=".devmgr.WifiSetActivity" />
+        <activity android:name=".devmgr.DevLogActivity" />
+        <activity android:name=".devmgr.DevLogDetActivity"></activity>
     </application>
 
 </manifest>

@@ -121,7 +121,8 @@
 
     <ImageView style="@style/iv" />
 
-    <LinearLayout style="@style/devset_l">
+    <LinearLayout style="@style/devset_l"
+        android:id="@+id/devset_log">
 
         <TextView
             style="@style/devset_tv"

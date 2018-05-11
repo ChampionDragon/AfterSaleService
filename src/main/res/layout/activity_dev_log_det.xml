@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/tt"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:id="@+id/logdet_date"
+            style="@style/tt_tv"
+            android:layout_centerInParent="true"
+            android:text="日期" />
+
+        <ImageView
+            android:id="@+id/logdet"
+            style="@style/tt_iv"
+            android:background="@drawable/title_im" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_margin="22dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="设备状态"
+            android:textColor="@android:color/black"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="："
+            android:textColor="@android:color/black"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/logdet_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="在线"
+            android:textColor="@color/blueSky"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/logdet_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/blueSky"
+        android:dividerHeight="2dp" />
+
+
+</LinearLayout>
