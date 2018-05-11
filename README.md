@@ -130,6 +130,22 @@
 ![程序的演示图片26](https://github.com/ChampionDragon/AfterSaleService/blob/master/UI/26.png)
 
 
+##  日志功能
+![程序的演示图片27](https://github.com/ChampionDragon/AfterSaleService/blob/master/UI/27.png)
+![程序的演示图片28](https://github.com/ChampionDragon/AfterSaleService/blob/master/UI/28.png)
+![程序的演示图片29](https://github.com/ChampionDragon/AfterSaleService/blob/master/UI/29.png)
+
+
+##  日志功能的改进：每次只能打开一个item（如果已经打开过一个item，上个item就自动收起），点击“查看详情”会跳转到“详情”界面：title是日期，
+listview是里面的完整内容（因为我在RecyclerView的每个item钟默认只显示5条信息）。
+
+![程序的演示图片27](https://github.com/ChampionDragon/AfterSaleService/blob/master/UI/30.png)
+![程序的演示图片27](https://github.com/ChampionDragon/AfterSaleService/blob/master/UI/31.png)
+
+
+
+
+
 
 
 
